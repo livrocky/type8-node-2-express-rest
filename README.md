@@ -7,6 +7,12 @@
 3. create express app
 4. add script "start": "node src/index.js"
 
+## cors
+
+1. npm install cors
+2. import cors
+3. app.use(cors())
+
 ## Terms
 
 1. REST -restful state transfer. Standartas kaip aplikacijos bendrauja tarpusavyje.
@@ -19,7 +25,11 @@
 ## uzklausa
 
 GET https://jsonplaceholder.typicode.com/api/users
+
 GET - http metodas
+
 host - https://jsonplaceholder.typicode.com/
+
 /api/users - endpoint
+
 users - resursas
