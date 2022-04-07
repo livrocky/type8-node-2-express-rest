@@ -20,7 +20,6 @@ app.get("/home", (request, response) => {
 });
 app.get("/api/colors", (request, response) => {
   let error = false;
-  //CIA REIK PARASYTI KAD ISTRAUKTU TIK VIENA SPALVA//
   // console.log('request.hostname ===', request.hostname);
   // console.log('request.ip ===', request.ip);
   // console.log('request.method ===', request.method);
@@ -37,6 +36,9 @@ app.get("/api/colors", (request, response) => {
     };
     response.status(400).json(ats);
   }
+});
+app.get("/api/colors/1", (request, response) => {
+  response.json(colors[0]);
 });
 
 // 404 case
